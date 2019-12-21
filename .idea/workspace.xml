@@ -1,89 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3615803-dd59-411a-9429-698993032953" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="f3615803-dd59-411a-9429-698993032953" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/strategy/BinSort.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/strategy/BubbleSort.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/strategy/HeapSort.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/strategy/InsertionSort.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/strategy/QuickSort.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/strategy/SelectionSort.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/strategy/Sort.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/strategy/SortExample.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignPattern.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DesignPattern.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nam/tran/Main.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1708752233">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/nam/tran/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="14" selection-start-column="14" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="291" />
-    <option name="y" value="40" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="DesignPattern" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DesignPattern" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DesignPattern" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DesignPattern" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DesignPattern" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DesignPattern" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tran" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectId" id="1VIEtw97KNvRQzLVvPnYedpsINq" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -96,6 +65,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -110,47 +96,47 @@
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
-    <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24972437" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/nam/tran/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="622" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1576936011725">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="622" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1576936011725" />
+    <state x="622" y="233" key="#com.intellij.ide.util.MemberChooser/0.23.1680.975@0.23.1680.975" timestamp="1576933633198" />
+    <state x="689" y="406" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1576932910208">
+      <screen x="0" y="23" width="1680" height="975" />
+    </state>
+    <state x="689" y="406" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1680.975@0.23.1680.975" timestamp="1576932910208" />
+    <state x="428" y="172" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor" timestamp="1576932905270">
+      <screen x="0" y="23" width="1680" height="975" />
+    </state>
+    <state x="428" y="172" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/0.23.1680.975@0.23.1680.975" timestamp="1576932905270" />
+    <state width="1638" height="287" key="GridCell.Tab.0.bottom" timestamp="1576936415983">
+      <screen x="0" y="23" width="1680" height="975" />
+    </state>
+    <state width="1638" height="287" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1576936359091" />
+    <state width="1638" height="287" key="GridCell.Tab.0.bottom/0.23.1680.975@0.23.1680.975" timestamp="1576936415983" />
+    <state width="1638" height="287" key="GridCell.Tab.0.center" timestamp="1576936415982">
+      <screen x="0" y="23" width="1680" height="975" />
+    </state>
+    <state width="1638" height="287" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1576936359090" />
+    <state width="1638" height="287" key="GridCell.Tab.0.center/0.23.1680.975@0.23.1680.975" timestamp="1576936415982" />
+    <state width="1638" height="287" key="GridCell.Tab.0.left" timestamp="1576936415982">
+      <screen x="0" y="23" width="1680" height="975" />
+    </state>
+    <state width="1638" height="287" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1576936359089" />
+    <state width="1638" height="287" key="GridCell.Tab.0.left/0.23.1680.975@0.23.1680.975" timestamp="1576936415982" />
+    <state width="1638" height="287" key="GridCell.Tab.0.right" timestamp="1576936415983">
+      <screen x="0" y="23" width="1680" height="975" />
+    </state>
+    <state width="1638" height="287" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1576936359090" />
+    <state width="1638" height="287" key="GridCell.Tab.0.right/0.23.1680.975@0.23.1680.975" timestamp="1576936415983" />
+    <state x="341" y="149" key="SettingsEditor" timestamp="1576933428070">
+      <screen x="0" y="23" width="1680" height="975" />
+    </state>
+    <state x="341" y="149" key="SettingsEditor/0.23.1680.975@0.23.1680.975" timestamp="1576933428070" />
+    <state x="517" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1576932465718">
+      <screen x="0" y="23" width="1680" height="975" />
+    </state>
+    <state x="517" y="343" key="com.intellij.ide.util.TipDialog/0.23.1680.975@0.23.1680.975" timestamp="1576932465718" />
   </component>
 </project>
