@@ -2,21 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3615803-dd59-411a-9429-698993032953" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/strategy/BinSort.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/strategy/BubbleSort.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/strategy/HeapSort.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/strategy/InsertionSort.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/strategy/QuickSort.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/strategy/SelectionSort.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/strategy/Sort.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/strategy/SortExample.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/strategy1/AxeBehavior.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/strategy1/BowAndArrowBehavior.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/strategy1/Character.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/strategy1/King.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/strategy1/KnifeBehavior.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/strategy1/Knight.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/strategy1/Queen.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/strategy1/SwordBehavior.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/strategy1/Troll.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/strategy1/WeaponBehavior.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPattern.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DesignPattern.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nam/tran/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nam/tran/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/nam/tran/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +27,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Kotlin Interface" />
         <option value="Kotlin File" />
         <option value="Kotlin Class" />
       </list>
@@ -50,6 +48,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -97,11 +96,16 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="622" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1576936011725">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="445" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577065739291">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="445" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1577065739291" />
+    <state x="750" y="232" key="#com.intellij.ide.util.MemberChooser" timestamp="1577069557822">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="622" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1576936011725" />
     <state x="622" y="233" key="#com.intellij.ide.util.MemberChooser/0.23.1680.975@0.23.1680.975" timestamp="1576933633198" />
+    <state x="750" y="232" key="#com.intellij.ide.util.MemberChooser/62.0.1858.1080@62.0.1858.1080" timestamp="1577069557822" />
     <state x="689" y="406" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1576932910208">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
@@ -110,33 +114,39 @@
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="428" y="172" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/0.23.1680.975@0.23.1680.975" timestamp="1576932905270" />
-    <state width="1638" height="287" key="GridCell.Tab.0.bottom" timestamp="1576936415983">
-      <screen x="0" y="23" width="1680" height="975" />
+    <state width="1815" height="287" key="GridCell.Tab.0.bottom" timestamp="1577071036306">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1638" height="287" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1576936359091" />
     <state width="1638" height="287" key="GridCell.Tab.0.bottom/0.23.1680.975@0.23.1680.975" timestamp="1576936415983" />
-    <state width="1638" height="287" key="GridCell.Tab.0.center" timestamp="1576936415982">
-      <screen x="0" y="23" width="1680" height="975" />
+    <state width="1815" height="287" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1577071036306" />
+    <state width="1815" height="287" key="GridCell.Tab.0.center" timestamp="1577071036306">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1638" height="287" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1576936359090" />
     <state width="1638" height="287" key="GridCell.Tab.0.center/0.23.1680.975@0.23.1680.975" timestamp="1576936415982" />
-    <state width="1638" height="287" key="GridCell.Tab.0.left" timestamp="1576936415982">
-      <screen x="0" y="23" width="1680" height="975" />
+    <state width="1815" height="287" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1577071036306" />
+    <state width="1815" height="287" key="GridCell.Tab.0.left" timestamp="1577071036306">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1638" height="287" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1576936359089" />
     <state width="1638" height="287" key="GridCell.Tab.0.left/0.23.1680.975@0.23.1680.975" timestamp="1576936415982" />
-    <state width="1638" height="287" key="GridCell.Tab.0.right" timestamp="1576936415983">
-      <screen x="0" y="23" width="1680" height="975" />
+    <state width="1815" height="287" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1577071036306" />
+    <state width="1815" height="287" key="GridCell.Tab.0.right" timestamp="1577071036306">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1638" height="287" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1576936359090" />
     <state width="1638" height="287" key="GridCell.Tab.0.right/0.23.1680.975@0.23.1680.975" timestamp="1576936415983" />
-    <state x="341" y="149" key="SettingsEditor" timestamp="1576933428070">
-      <screen x="0" y="23" width="1680" height="975" />
+    <state width="1815" height="287" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1577071036306" />
+    <state x="439" y="140" key="SettingsEditor" timestamp="1577065763505">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="341" y="149" key="SettingsEditor/0.23.1680.975@0.23.1680.975" timestamp="1576933428070" />
-    <state x="517" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1576932465718">
-      <screen x="0" y="23" width="1680" height="975" />
+    <state x="439" y="140" key="SettingsEditor/62.0.1858.1080@62.0.1858.1080" timestamp="1577065763505" />
+    <state x="634" y="354" key="com.intellij.ide.util.TipDialog" timestamp="1577065549013">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="517" y="343" key="com.intellij.ide.util.TipDialog/0.23.1680.975@0.23.1680.975" timestamp="1576932465718" />
+    <state x="634" y="354" key="com.intellij.ide.util.TipDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1577065549013" />
   </component>
 </project>
