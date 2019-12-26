@@ -1,21 +1,32 @@
 package nam.tran.observe
 
-class StatisticDisplay constructor(val subject: Subject): Observer,DisplayElement {
+class ForecastDisplay constructor(subject: Subject): Observer,DisplayElement {
 
-    private var temperature : Float = 0F
-    private var humidity : Float = 0F
+    private var currentPressure = 29.92f
+    private var lastPressure = 0f
 
     init {
         subject.registerObserver(this)
     }
 
     override fun update(temp: Float, humidity: Float, pressure: Float) {
-        this.temperature = temp
-        this.humidity = humidity
+        this.lastPressure = temp
+        currentPressure = pressure;
         display()
     }
 
     override fun display() {
-       println("Current conditions: ${temperature}F degrees and ${humidity}% humidity")
+        print("Forecast: ");
+        when {
+            currentPressure > lastPressure -> {
+                println("Improving weather on the way!");
+            }
+            currentPressure == lastPressure -> {
+                println("More of the same");
+            }
+            currentPressure < lastPressure -> {
+                println("Watch out for cooler, rainy weather");
+            }
+        }
     }
 }

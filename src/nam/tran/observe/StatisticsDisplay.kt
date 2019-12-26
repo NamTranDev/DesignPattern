@@ -1,6 +1,6 @@
 package nam.tran.observe
 
-class StatisticDisplay constructor(subject: Subject): Observer,DisplayElement {
+class StatisticsDisplay constructor(subject: Subject): Observer,DisplayElement {
 
     private var maxTemp = 0.0f
     private var minTemp = 200f
