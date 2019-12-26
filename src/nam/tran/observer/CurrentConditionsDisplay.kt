@@ -1,4 +1,4 @@
-package nam.tran.observe
+package nam.tran.observer
 
 class CurrentConditionsDisplay constructor(subject: Subject): Observer,DisplayElement {
 

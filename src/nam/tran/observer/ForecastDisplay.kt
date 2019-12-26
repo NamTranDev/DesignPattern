@@ -1,4 +1,4 @@
-package nam.tran.observe
+package nam.tran.observer
 
 class ForecastDisplay constructor(subject: Subject): Observer,DisplayElement {
 

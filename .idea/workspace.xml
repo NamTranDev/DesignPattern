@@ -2,16 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3615803-dd59-411a-9429-698993032953" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/observe/CurrentConditionsDisplay.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/observe/DisplayElement.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/observe/ForecastDisplay.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/observe/Observer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/observe/StatisticsDisplay.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/observe/Subject.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/observe/WeatherData.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/observer1/AccountService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/observer1/Data.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/observer1/Logger.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/observer1/Mailer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/observer1/ObserverUser.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/observer1/Protector.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/observer1/SubjectUser.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/nam/tran/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/nam/tran/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nam/tran/observe/CurrentConditionsDisplay.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/nam/tran/observer/CurrentConditionsDisplay.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nam/tran/observe/DisplayElement.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/nam/tran/observer/DisplayElement.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nam/tran/observe/ForecastDisplay.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/nam/tran/observer/ForecastDisplay.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nam/tran/observe/Observer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/nam/tran/observer/Observer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nam/tran/observe/StatisticsDisplay.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/nam/tran/observer/StatisticsDisplay.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nam/tran/observe/Subject.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/nam/tran/observer/Subject.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nam/tran/observe/WeatherData.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/nam/tran/observer/WeatherData.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +31,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Kotlin File" />
         <option value="Kotlin Interface" />
+        <option value="Kotlin File" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -48,12 +54,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/image" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="nam.tran.observe" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\DesignPattern\image" />
     </key>
   </component>
   <component name="RunManager">
@@ -103,12 +112,12 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="445" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1577065739291" />
-    <state x="750" y="232" key="#com.intellij.ide.util.MemberChooser" timestamp="1577267762357">
+    <state x="750" y="232" key="#com.intellij.ide.util.MemberChooser" timestamp="1577345066113">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="622" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1576936011725" />
     <state x="622" y="233" key="#com.intellij.ide.util.MemberChooser/0.23.1680.975@0.23.1680.975" timestamp="1576933633198" />
-    <state x="750" y="232" key="#com.intellij.ide.util.MemberChooser/62.0.1858.1080@62.0.1858.1080" timestamp="1577267762357" />
+    <state x="750" y="232" key="#com.intellij.ide.util.MemberChooser/62.0.1858.1080@62.0.1858.1080" timestamp="1577345066113" />
     <state x="689" y="406" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1576932910208">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
@@ -117,30 +126,30 @@
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="428" y="172" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/0.23.1680.975@0.23.1680.975" timestamp="1576932905270" />
-    <state width="1815" height="287" key="GridCell.Tab.0.bottom" timestamp="1577268654884">
+    <state width="1815" height="287" key="GridCell.Tab.0.bottom" timestamp="1577345483372">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1638" height="287" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1576936359091" />
     <state width="1638" height="287" key="GridCell.Tab.0.bottom/0.23.1680.975@0.23.1680.975" timestamp="1576936415983" />
-    <state width="1815" height="287" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1577268654884" />
-    <state width="1815" height="287" key="GridCell.Tab.0.center" timestamp="1577268654883">
+    <state width="1815" height="287" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1577345483372" />
+    <state width="1815" height="287" key="GridCell.Tab.0.center" timestamp="1577345483372">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1638" height="287" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1576936359090" />
     <state width="1638" height="287" key="GridCell.Tab.0.center/0.23.1680.975@0.23.1680.975" timestamp="1576936415982" />
-    <state width="1815" height="287" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1577268654883" />
-    <state width="1815" height="287" key="GridCell.Tab.0.left" timestamp="1577268654883">
+    <state width="1815" height="287" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1577345483372" />
+    <state width="1815" height="287" key="GridCell.Tab.0.left" timestamp="1577345483372">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1638" height="287" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1576936359089" />
     <state width="1638" height="287" key="GridCell.Tab.0.left/0.23.1680.975@0.23.1680.975" timestamp="1576936415982" />
-    <state width="1815" height="287" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1577268654883" />
-    <state width="1815" height="287" key="GridCell.Tab.0.right" timestamp="1577268654883">
+    <state width="1815" height="287" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1577345483372" />
+    <state width="1815" height="287" key="GridCell.Tab.0.right" timestamp="1577345483372">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1638" height="287" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1576936359090" />
     <state width="1638" height="287" key="GridCell.Tab.0.right/0.23.1680.975@0.23.1680.975" timestamp="1576936415983" />
-    <state width="1815" height="287" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1577268654883" />
+    <state width="1815" height="287" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1577345483372" />
     <state x="439" y="140" key="SettingsEditor" timestamp="1577065763505">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
