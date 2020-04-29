@@ -1,5 +1,6 @@
 package nam.tran
 
+import nam.tran.decorator.*
 import nam.tran.observer.CurrentConditionsDisplay
 import nam.tran.observer.ForecastDisplay
 import nam.tran.observer.StatisticsDisplay
@@ -19,7 +20,8 @@ object Main {
 //        strategyExample()
 //        strategyExample1()
 //        observerExample()
-        observerExample1()
+//        observerExample1()
+        decoratorExample()
     }
 
     private fun strategyExample() {
@@ -75,7 +77,7 @@ object Main {
     }
 
     private fun observerExample1(){
-        val account1: AccountService = createAccount("namtran09061992@gmail.com", "127.0.0.1")
+        val account1: AccountService = createAccount("zz_munsu_zz@yahoo.com", "127.0.0.1")
         account1.login()
         account1.changeStatus(LoginStatus.EXPIRED)
 
@@ -90,5 +92,13 @@ object Main {
         account.attach(Mailer())
         account.attach(Protector())
         return account
+    }
+
+    private fun decoratorExample(){
+        val darkRoast = DarkRoast()
+        val mocha = Mocha(darkRoast)
+        val mocha2 = Mocha(mocha)
+        val whip = Whip(mocha2)
+        println("${whip.description} $${whip.cost()}")
     }
 }
