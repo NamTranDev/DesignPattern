@@ -1,6 +1,8 @@
 package nam.tran
 
-import nam.tran.decorator.*
+import nam.tran.decorator.DarkRoast
+import nam.tran.decorator.Mocha
+import nam.tran.decorator.Whip
 import nam.tran.observer.CurrentConditionsDisplay
 import nam.tran.observer.ForecastDisplay
 import nam.tran.observer.StatisticsDisplay
@@ -21,7 +23,7 @@ object Main {
 //        strategyExample1()
 //        observerExample()
 //        observerExample1()
-        decoratorExample()
+//        decoratorExample()
     }
 
     private fun strategyExample() {
