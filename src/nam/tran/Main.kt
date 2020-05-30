@@ -3,6 +3,8 @@ package nam.tran
 import nam.tran.decorator.DarkRoast
 import nam.tran.decorator.Mocha
 import nam.tran.decorator.Whip
+import nam.tran.factory._method.ChicagoPizzaStore
+import nam.tran.factory._method.NYPizzaStore
 import nam.tran.observer.CurrentConditionsDisplay
 import nam.tran.observer.ForecastDisplay
 import nam.tran.observer.StatisticsDisplay
@@ -24,6 +26,8 @@ object Main {
 //        observerExample()
 //        observerExample1()
 //        decoratorExample()
+//        factoryMethodExample()
+        abstractFactoryExample()
     }
 
     private fun strategyExample() {
@@ -102,5 +106,23 @@ object Main {
         val mocha2 = Mocha(mocha)
         val whip = Whip(mocha2)
         println("${whip.description} $${whip.cost()}")
+    }
+
+    private fun factoryMethodExample(){
+        val nyStore = NYPizzaStore()
+        val chicagoStore = ChicagoPizzaStore()
+        var pizza = nyStore.orderPizza("cheese")
+        System.out.println("Ethen ordered a ${pizza?.name}")
+        pizza = chicagoStore.orderPizza("cheese")
+        System.out.println("Joel ordered a ${pizza?.name}")
+    }
+
+    private fun abstractFactoryExample(){
+        val nyStore = nam.tran.factory._abstract.NYPizzaStore()
+        val chicagoStore = nam.tran.factory._abstract.ChicagoPizzaStore()
+        var pizza = nyStore.orderPizza("cheese")
+        System.out.println("Ethen ordered a ${pizza?.name}")
+        pizza = chicagoStore.orderPizza("cheese")
+        System.out.println("Joel ordered a ${pizza?.name}")
     }
 }

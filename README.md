@@ -14,6 +14,8 @@
 
 - Classes should be open for extension, but closed for modification.
 
+- Depend upon abstractions. Do not depend upon concrete classes
+
 ## Strategy Pattern
 
 ###### " Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from the clients that use it "
@@ -31,3 +33,15 @@
 ###### " Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality. "
 
 <img src="image/design-patterns-decorator-diagram.png" />
+
+## Factory Method Pattern
+
+###### " Factory Method is a creational design pattern that Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses. "
+
+<img src="image/design-patterns-factory-diagram.png" />
+
+## Abstract Factory Pattern
+
+###### " The Abstract Factory Pattern provides an interface for creating families of related or dependent objects without specifying their concrete classes "
+
+<img src="image/design-patterns-abstract-factory.png" />
