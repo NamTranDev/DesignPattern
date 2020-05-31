@@ -5,6 +5,8 @@ import nam.tran.decorator.Mocha
 import nam.tran.decorator.Whip
 import nam.tran.factory._method.ChicagoPizzaStore
 import nam.tran.factory._method.NYPizzaStore
+import nam.tran.factory1._abstract.FunitureFactory
+import nam.tran.factory1._method.BankFactory
 import nam.tran.observer.CurrentConditionsDisplay
 import nam.tran.observer.ForecastDisplay
 import nam.tran.observer.StatisticsDisplay
@@ -27,7 +29,9 @@ object Main {
 //        observerExample1()
 //        decoratorExample()
 //        factoryMethodExample()
-        abstractFactoryExample()
+//        abstractFactoryExample()
+//        factoryMethodExample1()
+        abstractFactoryExample1()
     }
 
     private fun strategyExample() {
@@ -70,7 +74,7 @@ object Main {
         troll.fight()
     }
 
-    private fun observerExample(){
+    private fun observerExample() {
         val weatherData = WeatherData()
 
         val currentDisplay = CurrentConditionsDisplay(weatherData)
@@ -82,7 +86,7 @@ object Main {
         weatherData.setMeasurements(78f, 90f, 29.2f)
     }
 
-    private fun observerExample1(){
+    private fun observerExample1() {
         val account1: AccountService = createAccount("zz_munsu_zz@yahoo.com", "127.0.0.1")
         account1.login()
         account1.changeStatus(LoginStatus.EXPIRED)
@@ -100,7 +104,7 @@ object Main {
         return account
     }
 
-    private fun decoratorExample(){
+    private fun decoratorExample() {
         val darkRoast = DarkRoast()
         val mocha = Mocha(darkRoast)
         val mocha2 = Mocha(mocha)
@@ -108,7 +112,7 @@ object Main {
         println("${whip.description} $${whip.cost()}")
     }
 
-    private fun factoryMethodExample(){
+    private fun factoryMethodExample() {
         val nyStore = NYPizzaStore()
         val chicagoStore = ChicagoPizzaStore()
         var pizza = nyStore.orderPizza("cheese")
@@ -117,12 +121,42 @@ object Main {
         System.out.println("Joel ordered a ${pizza?.name}")
     }
 
-    private fun abstractFactoryExample(){
+    /*
+        Tất cả hệ thống ngân hàng có cung cấp API để truy cập đến hệ thống của họ. Team được giao nhiệm vụ thiết kế một API để client có thể sử dụng dịch vụ
+        của một ngân hàng bất kỳ. Hiện tại, phía client chỉ cần sử dụng dịch vụ của 2 ngân hàng là VietcomBank và TPBank. Tuy nhiên để dễ mở rộng sau này, và phía
+        client mong muốn không cần phải thay đổi code của họ khi cần sử dụng thêm dịch vụ của ngân hàng khác.
+    */
+    private fun factoryMethodExample1() {
+        val tpBank = BankFactory.getBank("TPBank")
+        tpBank?.payment()
+        val vietcomBank = BankFactory.getBank("VietcomBank")
+        vietcomBank?.payment()
+    }
+
+    private fun abstractFactoryExample() {
         val nyStore = nam.tran.factory._abstract.NYPizzaStore()
         val chicagoStore = nam.tran.factory._abstract.ChicagoPizzaStore()
         var pizza = nyStore.orderPizza("cheese")
         System.out.println("Ethen ordered a ${pizza?.name}")
         pizza = chicagoStore.orderPizza("cheese")
         System.out.println("Joel ordered a ${pizza?.name}")
+    }
+
+
+    /*
+        Một công ty đồ nội thất chuyên sản xuất ghế (Chair): ghế nhựa (PlasticChair) và ghế gỗ (WoodChair). Với tình hình kinh doanh ngày càng thuận thợi nên công ty quyết
+        định mở rộng thêm sản xuất bàn (Table). Với lợi thế là đã có kinh nghiệm từ sản xuất ghế nên công ty vẫn giữ chất liệu là nhựa (PlasticTable) và gỗ (WoodTable) cho
+        sản xuất bàn. Tuy nhiên, quy trình sản xuất ghế/ bàn theo từng chất liệu (MaterialType) là khác nhau. Nên công ty tách ra là nhà máy (Factory): 1 cho sản xuất vật
+        liệu bằng nhựa (PlasticFactory), 1 cho sản xuất vật liệu bằng gỗ (WoodFactory), nhưng cả 2 đều có thể sản xuất ghế và bàn (FunitureAbstractFactory). Khi khách hàng
+        cần mua một món đồ nào, khách hàng (Client) chỉ cần đến cửa hàng để mua (FunitureFactory). Khi đó ứng với từng hàng hóa và vật liệu sẽ được chuyển về phân xưởng
+        tương ứng để sản xuất (createXXX) ra bàn (Table) và ghế (Chair).
+    */
+    private fun abstractFactoryExample1() {
+        val funitureWood = FunitureFactory.getFuniture("wood")
+        funitureWood?.createChair()?.create()
+        funitureWood?.createTable()?.create()
+        val funiturePlastic = FunitureFactory.getFuniture("plastic")
+        funiturePlastic?.createChair()?.create()
+        funiturePlastic?.createTable()?.create()
     }
 }
