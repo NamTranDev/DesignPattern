@@ -17,6 +17,7 @@ import nam.tran.strategy1.King
 import nam.tran.strategy1.Knight
 import nam.tran.strategy1.Queen
 import nam.tran.strategy1.Troll
+import java.util.*
 
 
 object Main {
@@ -121,6 +122,15 @@ object Main {
         System.out.println("Joel ordered a ${pizza?.name}")
     }
 
+    private fun abstractFactoryExample() {
+        val nyStore = nam.tran.factory._abstract.NYPizzaStore()
+        val chicagoStore = nam.tran.factory._abstract.ChicagoPizzaStore()
+        var pizza = nyStore.orderPizza("cheese")
+        System.out.println("Ethen ordered a ${pizza?.name}")
+        pizza = chicagoStore.orderPizza("cheese")
+        System.out.println("Joel ordered a ${pizza?.name}")
+    }
+
     /*
         Tất cả hệ thống ngân hàng có cung cấp API để truy cập đến hệ thống của họ. Team được giao nhiệm vụ thiết kế một API để client có thể sử dụng dịch vụ
         của một ngân hàng bất kỳ. Hiện tại, phía client chỉ cần sử dụng dịch vụ của 2 ngân hàng là VietcomBank và TPBank. Tuy nhiên để dễ mở rộng sau này, và phía
@@ -132,16 +142,6 @@ object Main {
         val vietcomBank = BankFactory.getBank("VietcomBank")
         vietcomBank?.payment()
     }
-
-    private fun abstractFactoryExample() {
-        val nyStore = nam.tran.factory._abstract.NYPizzaStore()
-        val chicagoStore = nam.tran.factory._abstract.ChicagoPizzaStore()
-        var pizza = nyStore.orderPizza("cheese")
-        System.out.println("Ethen ordered a ${pizza?.name}")
-        pizza = chicagoStore.orderPizza("cheese")
-        System.out.println("Joel ordered a ${pizza?.name}")
-    }
-
 
     /*
         Một công ty đồ nội thất chuyên sản xuất ghế (Chair): ghế nhựa (PlasticChair) và ghế gỗ (WoodChair). Với tình hình kinh doanh ngày càng thuận thợi nên công ty quyết

@@ -30,13 +30,13 @@
 
 ## Decorator Pattern
 
-###### " Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality. "
+###### " Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality "
 
 <img src="image/design-patterns-decorator-diagram.png" />
 
 ## Factory Method Pattern
 
-###### " Factory Method is a creational design pattern that Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses. "
+###### " Factory Method is a creational design pattern that Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses "
 
 <img src="image/design-patterns-factory-diagram.png" />
 
@@ -44,4 +44,10 @@
 
 ###### " The Abstract Factory Pattern provides an interface for creating families of related or dependent objects without specifying their concrete classes "
 
-<img src="image/design-patterns-abstract-factory.png" />
+<img src="image/design-patterns-abstract-factory-diagram.png" />
+
+## Singleton Pattern
+
+###### "  The Singleton Pattern ensures a class has only one instance, and provides a global point of access to it "
+
+<img src="image/design-patterns-singleton-diagram.png" />
