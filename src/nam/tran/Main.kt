@@ -12,6 +12,7 @@ import nam.tran.observer.ForecastDisplay
 import nam.tran.observer.StatisticsDisplay
 import nam.tran.observer.WeatherData
 import nam.tran.observer1.*
+import nam.tran.singleton.*
 import nam.tran.strategy.*
 import nam.tran.strategy1.King
 import nam.tran.strategy1.Knight
@@ -32,7 +33,8 @@ object Main {
 //        factoryMethodExample()
 //        abstractFactoryExample()
 //        factoryMethodExample1()
-        abstractFactoryExample1()
+//        abstractFactoryExample1()
+        singletonPatternExample()
     }
 
     private fun strategyExample() {
@@ -158,5 +160,20 @@ object Main {
         val funiturePlastic = FunitureFactory.getFuniture("plastic")
         funiturePlastic?.createChair()?.create()
         funiturePlastic?.createTable()?.create()
+    }
+
+    /*
+        Dưới đây là một số trường hợp sử dụng của Singleton Pattern thường gặp:
+            Vì class dùng Singleton chỉ tồn tại 1 Instance (thể hiện) nên nó thường được dùng cho các trường hợp giải quyết các bài toán cần truy cập vào các
+            ứng dụng như: Shared resource, Logger, Configuration, Caching, Thread pool, … Một số design pattern khác cũng sử dụng Singleton để triển khai: Abstract
+            Factory, Builder, Prototype, Facade,… Đã được sử dụng trong một số class của core java như: java.lang.Runtime, java.awt.Desktop.
+    */
+    private fun singletonPatternExample(){
+        EagerInitialization.getInstance()
+        StaticBlockInitialization.getInstance()
+        LazyInitialization.getInstance()
+        ThreadSafeInitialization.getInstance()
+        DoubleCheckLockingInitialization.getInstance()
+        BillPughSingleton.getInstance()
     }
 }
