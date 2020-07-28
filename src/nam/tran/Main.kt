@@ -1,5 +1,6 @@
 package nam.tran
 
+import nam.tran.command.*
 import nam.tran.decorator.DarkRoast
 import nam.tran.decorator.Mocha
 import nam.tran.decorator.Whip
@@ -18,7 +19,6 @@ import nam.tran.strategy1.King
 import nam.tran.strategy1.Knight
 import nam.tran.strategy1.Queen
 import nam.tran.strategy1.Troll
-import java.util.*
 
 
 object Main {
@@ -34,7 +34,8 @@ object Main {
 //        abstractFactoryExample()
 //        factoryMethodExample1()
 //        abstractFactoryExample1()
-        singletonPatternExample()
+//        singletonPatternExample()
+        commandPatternExample()
     }
 
     private fun strategyExample() {
@@ -175,5 +176,45 @@ object Main {
         ThreadSafeInitialization.getInstance()
         DoubleCheckLockingInitialization.getInstance()
         BillPughSingleton.getInstance()
+    }
+
+    private fun commandPatternExample(){
+        val remoteControl = RemoteControl()
+        val lightKitchen = Light("Kitchen")
+        val lightLivingRoom = Light("Living Room")
+        val ceilingFan = CeilingFan()
+        val garageDoor = GarageDoor()
+        val stereo = Stereo("Living Room")
+
+        val lightOnLivingRoom = LightOnCommand(lightLivingRoom)
+        val lightOffLivingRoom = LightOffCommand(lightLivingRoom)
+        val lightOnKitchen = LightOnCommand(lightKitchen)
+        val lightOffKitchen = LightOffCommand(lightKitchen)
+        val ceilingFanOn = CeilingFanOnCommand(ceilingFan)
+        val ceilingFanOff = CeilingFanOffCommand(ceilingFan)
+        val garageDoorUp = GarageUpCommand(garageDoor)
+        val garageDoorDown = GarageDownCommand(garageDoor)
+        val stereoOn = StereoOnCommand(stereo)
+        val stereoOff = StereoOffCommand(stereo)
+
+        remoteControl.setCommand(0,lightOnLivingRoom,lightOffLivingRoom)
+        remoteControl.setCommand(1,lightOnKitchen,lightOffKitchen)
+        remoteControl.setCommand(2,ceilingFanOn,ceilingFanOff)
+        remoteControl.setCommand(3,garageDoorUp,garageDoorDown)
+        remoteControl.setCommand(4,stereoOn,stereoOff)
+
+        println(remoteControl)
+
+        remoteControl.onPress(0)
+        remoteControl.onPress(1)
+        remoteControl.onPress(2)
+        remoteControl.onPress(3)
+        remoteControl.onPress(4)
+
+        remoteControl.offPress(0)
+        remoteControl.offPress(1)
+        remoteControl.offPress(2)
+        remoteControl.offPress(3)
+        remoteControl.offPress(4)
     }
 }
