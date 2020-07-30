@@ -5,4 +5,8 @@ class LightOnCommand constructor(val light : Light) : Command{
     override fun excute() {
         light.on()
     }
+
+    override fun undo() {
+        light.off()
+    }
 }

@@ -198,23 +198,33 @@ object Main {
         val stereoOff = StereoOffCommand(stereo)
 
         remoteControl.setCommand(0,lightOnLivingRoom,lightOffLivingRoom)
-        remoteControl.setCommand(1,lightOnKitchen,lightOffKitchen)
-        remoteControl.setCommand(2,ceilingFanOn,ceilingFanOff)
-        remoteControl.setCommand(3,garageDoorUp,garageDoorDown)
-        remoteControl.setCommand(4,stereoOn,stereoOff)
+//        remoteControl.setCommand(1,lightOnKitchen,lightOffKitchen)
+//        remoteControl.setCommand(2,ceilingFanOn,ceilingFanOff)
+//        remoteControl.setCommand(3,garageDoorUp,garageDoorDown)
+//        remoteControl.setCommand(4,stereoOn,stereoOff)
 
         println(remoteControl)
+//
+//        remoteControl.onPress(0)
+//        remoteControl.onPress(1)
+//        remoteControl.onPress(2)
+//        remoteControl.onPress(3)
+//        remoteControl.onPress(4)
+//
+//        remoteControl.offPress(0)
+//        remoteControl.offPress(1)
+//        remoteControl.offPress(2)
+//        remoteControl.offPress(3)
+//        remoteControl.offPress(4)
 
         remoteControl.onPress(0)
-        remoteControl.onPress(1)
-        remoteControl.onPress(2)
-        remoteControl.onPress(3)
-        remoteControl.onPress(4)
+        remoteControl.offPress(0)
+        println(remoteControl)
+        remoteControl.undoPress()
 
         remoteControl.offPress(0)
-        remoteControl.offPress(1)
-        remoteControl.offPress(2)
-        remoteControl.offPress(3)
-        remoteControl.offPress(4)
+        remoteControl.onPress(0)
+        println(remoteControl)
+        remoteControl.undoPress()
     }
 }

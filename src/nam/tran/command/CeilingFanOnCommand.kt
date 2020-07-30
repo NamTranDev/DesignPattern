@@ -5,4 +5,8 @@ class CeilingFanOnCommand constructor(val cellingFan: CeilingFan) : Command{
     override fun excute() {
         cellingFan.on()
     }
+
+    override fun undo() {
+
+    }
 }

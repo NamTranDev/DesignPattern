@@ -1,9 +1,9 @@
 package nam.tran.command
 
-class StereoOffCommand constructor(val stereo: Stereo) : Command {
+class NoCommand : Command{
 
     override fun excute() {
-        stereo.off()
+
     }
 
     override fun undo() {

@@ -7,4 +7,8 @@ class StereoOnCommand constructor(val stereo: Stereo) : Command {
         stereo.setCD()
         stereo.setVolumn(11)
     }
+
+    override fun undo() {
+
+    }
 }
