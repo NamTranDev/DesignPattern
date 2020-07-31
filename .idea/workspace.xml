@@ -2,19 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="071c51e9-f6a3-4d78-81e1-ef28f0cf79df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/command/NoCommand.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/command/CeilingFanHighCommand.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/command/CeilingFanLevel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/command/CeilingFanLowCommand.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/command/CeilingFanMediumCommand.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/nam/tran/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/nam/tran/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nam/tran/command/CeilingFan.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/nam/tran/command/CeilingFan.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/nam/tran/command/CeilingFanOffCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/nam/tran/command/CeilingFanOffCommand.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nam/tran/command/CeilingFanOnCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/nam/tran/command/CeilingFanOnCommand.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nam/tran/command/Command.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/nam/tran/command/Command.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nam/tran/command/GarageDownCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/nam/tran/command/GarageDownCommand.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nam/tran/command/GarageUpCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/nam/tran/command/GarageUpCommand.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nam/tran/command/LightOffCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/nam/tran/command/LightOffCommand.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nam/tran/command/LightOnCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/nam/tran/command/LightOnCommand.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nam/tran/command/RemoteControl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/nam/tran/command/RemoteControl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nam/tran/command/StereoOffCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/nam/tran/command/StereoOffCommand.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nam/tran/command/StereoOnCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/nam/tran/command/StereoOnCommand.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nam/tran/command/CeilingFanOnCommand.kt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,30 +88,34 @@
       <screen x="1982" y="0" width="1858" height="1080" />
     </state>
     <state x="2534" y="244" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1982.0.1858.1080/62.0.1858.1080@1982.0.1858.1080" timestamp="1595947660547" />
-    <state width="1815" height="285" key="GridCell.Tab.0.bottom" timestamp="1596123392905">
+    <state x="721" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596209704926">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="721" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1596209704926" />
+    <state width="1815" height="285" key="GridCell.Tab.0.bottom" timestamp="1596210551927">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1871" height="221" key="GridCell.Tab.0.bottom/1982.0.1858.1080/62.0.1858.1080@1982.0.1858.1080" timestamp="1595948237913" />
     <state width="1815" height="286" key="GridCell.Tab.0.bottom/1982.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1595145346561" />
-    <state width="1815" height="285" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1596123392905" />
-    <state width="1815" height="285" key="GridCell.Tab.0.center" timestamp="1596123392905">
+    <state width="1815" height="285" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1596210551927" />
+    <state width="1815" height="285" key="GridCell.Tab.0.center" timestamp="1596210551927">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1871" height="221" key="GridCell.Tab.0.center/1982.0.1858.1080/62.0.1858.1080@1982.0.1858.1080" timestamp="1595948237913" />
     <state width="1815" height="286" key="GridCell.Tab.0.center/1982.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1595145346561" />
-    <state width="1815" height="285" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1596123392905" />
-    <state width="1815" height="285" key="GridCell.Tab.0.left" timestamp="1596123392905">
+    <state width="1815" height="285" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1596210551927" />
+    <state width="1815" height="285" key="GridCell.Tab.0.left" timestamp="1596210551927">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1871" height="221" key="GridCell.Tab.0.left/1982.0.1858.1080/62.0.1858.1080@1982.0.1858.1080" timestamp="1595948237913" />
     <state width="1815" height="286" key="GridCell.Tab.0.left/1982.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1595145346561" />
-    <state width="1815" height="285" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1596123392905" />
-    <state width="1815" height="285" key="GridCell.Tab.0.right" timestamp="1596123392905">
+    <state width="1815" height="285" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1596210551927" />
+    <state width="1815" height="285" key="GridCell.Tab.0.right" timestamp="1596210551927">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1871" height="221" key="GridCell.Tab.0.right/1982.0.1858.1080/62.0.1858.1080@1982.0.1858.1080" timestamp="1595948237913" />
     <state width="1815" height="286" key="GridCell.Tab.0.right/1982.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1595145346561" />
-    <state width="1815" height="285" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1596123392905" />
+    <state width="1815" height="285" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1596210551927" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

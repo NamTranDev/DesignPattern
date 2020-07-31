@@ -1,12 +1,12 @@
 package nam.tran.command
 
-class CeilingFanOffCommand constructor(val cellingFan: CeilingFan) : Command {
+class CeilingFanMediumCommand constructor(val cellingFan: CeilingFan) : Command {
 
     var prevSpeed: CeilingFanLevel? = null
 
     override fun excute() {
         prevSpeed = cellingFan.speed
-        cellingFan.off()
+        cellingFan.medium()
     }
 
     override fun undo() {

@@ -169,7 +169,7 @@ object Main {
             ứng dụng như: Shared resource, Logger, Configuration, Caching, Thread pool, … Một số design pattern khác cũng sử dụng Singleton để triển khai: Abstract
             Factory, Builder, Prototype, Facade,… Đã được sử dụng trong một số class của core java như: java.lang.Runtime, java.awt.Desktop.
     */
-    private fun singletonPatternExample(){
+    private fun singletonPatternExample() {
         EagerInitialization.getInstance()
         StaticBlockInitialization.getInstance()
         LazyInitialization.getInstance()
@@ -178,7 +178,7 @@ object Main {
         BillPughSingleton.getInstance()
     }
 
-    private fun commandPatternExample(){
+    private fun commandPatternExample() {
         val remoteControl = RemoteControl()
         val lightKitchen = Light("Kitchen")
         val lightLivingRoom = Light("Living Room")
@@ -186,44 +186,37 @@ object Main {
         val garageDoor = GarageDoor()
         val stereo = Stereo("Living Room")
 
-        val lightOnLivingRoom = LightOnCommand(lightLivingRoom)
-        val lightOffLivingRoom = LightOffCommand(lightLivingRoom)
-        val lightOnKitchen = LightOnCommand(lightKitchen)
-        val lightOffKitchen = LightOffCommand(lightKitchen)
-        val ceilingFanOn = CeilingFanOnCommand(ceilingFan)
-        val ceilingFanOff = CeilingFanOffCommand(ceilingFan)
-        val garageDoorUp = GarageUpCommand(garageDoor)
-        val garageDoorDown = GarageDownCommand(garageDoor)
-        val stereoOn = StereoOnCommand(stereo)
-        val stereoOff = StereoOffCommand(stereo)
-
-        remoteControl.setCommand(0,lightOnLivingRoom,lightOffLivingRoom)
-//        remoteControl.setCommand(1,lightOnKitchen,lightOffKitchen)
-//        remoteControl.setCommand(2,ceilingFanOn,ceilingFanOff)
-//        remoteControl.setCommand(3,garageDoorUp,garageDoorDown)
-//        remoteControl.setCommand(4,stereoOn,stereoOff)
-
-        println(remoteControl)
+//        val lightOnLivingRoom = LightOnCommand(lightLivingRoom)
+//        val lightOffLivingRoom = LightOffCommand(lightLivingRoom)
+//
+//        remoteControl.setCommand(0,lightOnLivingRoom,lightOffLivingRoom)
+//
+//        println(remoteControl)
 //
 //        remoteControl.onPress(0)
-//        remoteControl.onPress(1)
-//        remoteControl.onPress(2)
-//        remoteControl.onPress(3)
-//        remoteControl.onPress(4)
+//        remoteControl.offPress(0)
+//        println(remoteControl)
+//        remoteControl.undoPress()
 //
 //        remoteControl.offPress(0)
-//        remoteControl.offPress(1)
-//        remoteControl.offPress(2)
-//        remoteControl.offPress(3)
-//        remoteControl.offPress(4)
+//        remoteControl.onPress(0)
+//        println(remoteControl)
+//        remoteControl.undoPress()
+
+
+        val ceilingFanHighCommand = CeilingFanHighCommand(ceilingFan)
+        val ceilingFanMediumCommand = CeilingFanMediumCommand(ceilingFan)
+        val ceilingFanLowCommand = CeilingFanLowCommand(ceilingFan)
+        val ceilingFanOffCommand = CeilingFanOffCommand(ceilingFan)
+
+        remoteControl.setCommand(0, ceilingFanMediumCommand, ceilingFanOffCommand)
+        remoteControl.setCommand(1, ceilingFanHighCommand, ceilingFanOffCommand)
 
         remoteControl.onPress(0)
         remoteControl.offPress(0)
         println(remoteControl)
         remoteControl.undoPress()
-
-        remoteControl.offPress(0)
-        remoteControl.onPress(0)
+        remoteControl.onPress(1)
         println(remoteControl)
         remoteControl.undoPress()
     }
