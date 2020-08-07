@@ -204,20 +204,37 @@ object Main {
 //        remoteControl.undoPress()
 
 
-        val ceilingFanHighCommand = CeilingFanHighCommand(ceilingFan)
-        val ceilingFanMediumCommand = CeilingFanMediumCommand(ceilingFan)
-        val ceilingFanLowCommand = CeilingFanLowCommand(ceilingFan)
-        val ceilingFanOffCommand = CeilingFanOffCommand(ceilingFan)
+//        val ceilingFanHighCommand = CeilingFanHighCommand(ceilingFan)
+//        val ceilingFanMediumCommand = CeilingFanMediumCommand(ceilingFan)
+//        val ceilingFanLowCommand = CeilingFanLowCommand(ceilingFan)
+//        val ceilingFanOffCommand = CeilingFanOffCommand(ceilingFan)
+//
+//        remoteControl.setCommand(0, ceilingFanMediumCommand, ceilingFanOffCommand)
+//        remoteControl.setCommand(1, ceilingFanHighCommand, ceilingFanOffCommand)
+//
+//        remoteControl.onPress(0)
+//        remoteControl.offPress(0)
+//        println(remoteControl)
+//        remoteControl.undoPress()
+//        remoteControl.onPress(1)
+//        println(remoteControl)
+//        remoteControl.undoPress()
 
-        remoteControl.setCommand(0, ceilingFanMediumCommand, ceilingFanOffCommand)
-        remoteControl.setCommand(1, ceilingFanHighCommand, ceilingFanOffCommand)
 
+        val lightOn = LightOnCommand(lightKitchen)
+        val lightOff = LightOffCommand(lightKitchen)
+        val stereoOn = StereoOnCommand(stereo)
+        val stereoOff = StereoOffCommand(stereo)
+
+        val macroOn = MacroCommand(arrayOf(lightOn,stereoOn))
+        val macroOff = MacroCommand(arrayOf(lightOff,stereoOff))
+
+        remoteControl.setCommand(0,macroOn,macroOff)
+        println("------ Pushing Macro On ------")
         remoteControl.onPress(0)
+        println("------ Pushing Macro Off ------")
         remoteControl.offPress(0)
-        println(remoteControl)
-        remoteControl.undoPress()
-        remoteControl.onPress(1)
-        println(remoteControl)
+        println("------ Pushing Macro Undo ------")
         remoteControl.undoPress()
     }
 }

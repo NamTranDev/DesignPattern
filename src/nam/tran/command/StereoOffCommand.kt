@@ -7,6 +7,8 @@ class StereoOffCommand constructor(val stereo: Stereo) : Command {
     }
 
     override fun undo() {
-
+        stereo.on()
+        stereo.setCD()
+        stereo.setVolumn(11)
     }
 }
