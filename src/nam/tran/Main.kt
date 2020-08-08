@@ -1,6 +1,11 @@
 package nam.tran
 
 import nam.tran.command.*
+import nam.tran.command1.Account
+import nam.tran.command1.BankControl
+import nam.tran.command1.CloseAccountCommand
+import nam.tran.command1.OpenAccountCommand
+import nam.tran.command2.DocumentControl
 import nam.tran.decorator.DarkRoast
 import nam.tran.decorator.Mocha
 import nam.tran.decorator.Whip
@@ -35,7 +40,9 @@ object Main {
 //        factoryMethodExample1()
 //        abstractFactoryExample1()
 //        singletonPatternExample()
-        commandPatternExample()
+//        commandPatternExample()
+//        commandPatternExample1()
+        commandPatternExample2()
     }
 
     private fun strategyExample() {
@@ -165,9 +172,9 @@ object Main {
 
     /*
         Dưới đây là một số trường hợp sử dụng của Singleton Pattern thường gặp:
-            Vì class dùng Singleton chỉ tồn tại 1 Instance (thể hiện) nên nó thường được dùng cho các trường hợp giải quyết các bài toán cần truy cập vào các
-            ứng dụng như: Shared resource, Logger, Configuration, Caching, Thread pool, … Một số design pattern khác cũng sử dụng Singleton để triển khai: Abstract
-            Factory, Builder, Prototype, Facade,… Đã được sử dụng trong một số class của core java như: java.lang.Runtime, java.awt.Desktop.
+        Vì class dùng Singleton chỉ tồn tại 1 Instance (thể hiện) nên nó thường được dùng cho các trường hợp giải quyết các bài toán cần truy cập vào các
+        ứng dụng như: Shared resource, Logger, Configuration, Caching, Thread pool, … Một số design pattern khác cũng sử dụng Singleton để triển khai: Abstract
+        Factory, Builder, Prototype, Facade,… Đã được sử dụng trong một số class của core java như: java.lang.Runtime, java.awt.Desktop.
     */
     private fun singletonPatternExample() {
         EagerInitialization.getInstance()
@@ -226,15 +233,59 @@ object Main {
         val stereoOn = StereoOnCommand(stereo)
         val stereoOff = StereoOffCommand(stereo)
 
-        val macroOn = MacroCommand(arrayOf(lightOn,stereoOn))
-        val macroOff = MacroCommand(arrayOf(lightOff,stereoOff))
+        val macroOn = MacroCommand(arrayOf(lightOn, stereoOn))
+        val macroOff = MacroCommand(arrayOf(lightOff, stereoOff))
 
-        remoteControl.setCommand(0,macroOn,macroOff)
+        remoteControl.setCommand(0, macroOn, macroOff)
         println("------ Pushing Macro On ------")
         remoteControl.onPress(0)
         println("------ Pushing Macro Off ------")
         remoteControl.offPress(0)
         println("------ Pushing Macro Undo ------")
         remoteControl.undoPress()
+    }
+
+    /*
+        Một hệ thống ngân hàng cung cấp ứng dụng cho khách hàng (client) có thể mở (open) hoặc đóng (close) tài khoản trực tuyến. Hệ thống này được thiết kế theo
+        dạng module, mỗi module sẽ thực hiện một nhiệm vụ riêng của nó, chẳng hạn mở tài khoản (OpenAccount), đóng tài khoản (CloseAccount). Do hệ thống không biết
+        mỗi module sẽ làm gì, nên khi có yêu cầu client (chẳng hạn clickOpenAccount, clickCloseAccount), nó sẽ đóng gói yêu cầu này và gọi module xử lý.
+    */
+    fun commandPatternExample1() {
+        val control = BankControl()
+        val account = Account()
+        val openCommand = OpenAccountCommand(account)
+        val closeCommand = CloseAccountCommand(account)
+
+        control.setAction(openCommand, closeCommand)
+
+        control.clickOpenAccount()
+        control.clickCloseAccount()
+    }
+
+    /*
+        Ứng dụng văn bản cần một chức năng để thêm hoặc lưu trữ những hành động undo hay redo. ( Lớp Document chỉ cung cấp phương thức ghi thêm một
+         dòng văn bản mới hoặc xóa một dòng văn bản đã ghi trước đó. )
+    */
+    fun commandPatternExample2() {
+        val instance = DocumentControl()
+        instance.write("The 1st text. ")
+        instance.undo()
+        instance.read() // EMPTY
+
+        instance.redo()
+        instance.read() // The 1st text.
+
+        instance.write("The 2nd text. ")
+        instance.write("The 3rd text. ")
+        instance.read() // The 1st text. The 2nd text. The 3rd text.
+
+        instance.undo() // The 1st text. The 2nd text.
+
+        instance.undo() // The 1st text.
+
+        instance.undo() // EMPTY
+
+        instance.undo() // Nothing to undo
+
     }
 }

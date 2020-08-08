@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="071c51e9-f6a3-4d78-81e1-ef28f0cf79df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/command/MacroCommand.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/command1/Account.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/command1/BankControl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/command1/CloseAccountCommand.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/command1/CommandBank.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/command1/OpenAccountCommand.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/command2/CommandText.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/command2/Document.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/command2/DocumentControl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/command2/DocumentEditorCommand.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/nam/tran/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/nam/tran/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nam/tran/command/StereoOffCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/nam/tran/command/StereoOffCommand.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nam/tran/command/StereoOnCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/nam/tran/command/StereoOnCommand.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +46,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="nam.tran.command1" />
       <recent name="nam.tran.command" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -80,10 +87,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="782" y="256" key="#com.intellij.ide.util.MemberChooser" timestamp="1596811860170">
+    <state x="782" y="256" key="#com.intellij.ide.util.MemberChooser" timestamp="1596877708449">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="782" y="256" key="#com.intellij.ide.util.MemberChooser/62.0.1858.1080@62.0.1858.1080" timestamp="1596811860170" />
+    <state x="782" y="256" key="#com.intellij.ide.util.MemberChooser/62.0.1858.1080@62.0.1858.1080" timestamp="1596877708449" />
     <state x="2534" y="244" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1595947660547">
       <screen x="1982" y="0" width="1858" height="1080" />
     </state>
@@ -92,30 +99,34 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="721" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1596209704926" />
-    <state width="1815" height="285" key="GridCell.Tab.0.bottom" timestamp="1596813967603">
+    <state width="1815" height="285" key="GridCell.Tab.0.bottom" timestamp="1596878275309">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1871" height="221" key="GridCell.Tab.0.bottom/1982.0.1858.1080/62.0.1858.1080@1982.0.1858.1080" timestamp="1595948237913" />
     <state width="1815" height="286" key="GridCell.Tab.0.bottom/1982.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1595145346561" />
-    <state width="1815" height="285" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1596813967603" />
-    <state width="1815" height="285" key="GridCell.Tab.0.center" timestamp="1596813967603">
+    <state width="1815" height="285" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1596878275309" />
+    <state width="1815" height="285" key="GridCell.Tab.0.center" timestamp="1596878275308">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1871" height="221" key="GridCell.Tab.0.center/1982.0.1858.1080/62.0.1858.1080@1982.0.1858.1080" timestamp="1595948237913" />
     <state width="1815" height="286" key="GridCell.Tab.0.center/1982.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1595145346561" />
-    <state width="1815" height="285" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1596813967603" />
-    <state width="1815" height="285" key="GridCell.Tab.0.left" timestamp="1596813967602">
+    <state width="1815" height="285" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1596878275308" />
+    <state width="1815" height="285" key="GridCell.Tab.0.left" timestamp="1596878275308">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1871" height="221" key="GridCell.Tab.0.left/1982.0.1858.1080/62.0.1858.1080@1982.0.1858.1080" timestamp="1595948237913" />
     <state width="1815" height="286" key="GridCell.Tab.0.left/1982.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1595145346561" />
-    <state width="1815" height="285" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1596813967602" />
-    <state width="1815" height="285" key="GridCell.Tab.0.right" timestamp="1596813967603">
+    <state width="1815" height="285" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1596878275308" />
+    <state width="1815" height="285" key="GridCell.Tab.0.right" timestamp="1596878275309">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1871" height="221" key="GridCell.Tab.0.right/1982.0.1858.1080/62.0.1858.1080@1982.0.1858.1080" timestamp="1595948237913" />
     <state width="1815" height="286" key="GridCell.Tab.0.right/1982.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1595145346561" />
-    <state width="1815" height="285" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1596813967603" />
+    <state width="1815" height="285" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1596878275309" />
+    <state x="654" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1596873205474">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="654" y="235" width="672" height="678" key="search.everywhere.popup/62.0.1858.1080@62.0.1858.1080" timestamp="1596873205474" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
