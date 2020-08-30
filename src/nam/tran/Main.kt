@@ -1,5 +1,9 @@
 package nam.tran
 
+import nam.tran.adapter.Duck
+import nam.tran.adapter.MallardDuck
+import nam.tran.adapter.TurkeyAdapter
+import nam.tran.adapter.WildTurkey
 import nam.tran.command.*
 import nam.tran.command1.Account
 import nam.tran.command1.BankControl
@@ -9,6 +13,7 @@ import nam.tran.command2.DocumentControl
 import nam.tran.decorator.DarkRoast
 import nam.tran.decorator.Mocha
 import nam.tran.decorator.Whip
+import nam.tran.facade.*
 import nam.tran.factory._method.ChicagoPizzaStore
 import nam.tran.factory._method.NYPizzaStore
 import nam.tran.factory1._abstract.FunitureFactory
@@ -42,7 +47,9 @@ object Main {
 //        singletonPatternExample()
 //        commandPatternExample()
 //        commandPatternExample1()
-        commandPatternExample2()
+//        commandPatternExample2()
+//        adapterPatternExample()
+        facadePatternExample()
     }
 
     private fun strategyExample() {
@@ -286,6 +293,42 @@ object Main {
         instance.undo() // EMPTY
 
         instance.undo() // Nothing to undo
+    }
 
+    fun adapterPatternExample(){
+        val duck = MallardDuck()
+        val turkey = WildTurkey()
+
+        val adapter = TurkeyAdapter(turkey)
+
+        println("The Turkey say : ")
+        turkey.gobble()
+        turkey.fly()
+
+        println("The Duck say : ")
+        testDuck(duck)
+
+        println("The Adapter say : ")
+        testDuck(adapter)
+    }
+
+    fun facadePatternExample(){
+        val amplifier = Amplifier()
+        val tuner = Tuner(amplifier)
+        val dvdPlayer = DvdPlayer(amplifier)
+        val cdPlayer = CdPlayer(amplifier)
+        val projector = Projector(dvdPlayer)
+        val popper = PopcornPopper()
+        val lights = TheaterLights()
+        val screen = Screen()
+
+        val homeTheater = HomeTheaterFacade(amplifier,tuner,dvdPlayer,cdPlayer,projector,screen,lights,popper)
+        homeTheater.watchMovie()
+        homeTheater.endMovie()
+    }
+
+    private fun testDuck(duck: Duck){
+        duck.quack()
+        duck.fly()
     }
 }
