@@ -4,6 +4,8 @@ import nam.tran.adapter.Duck
 import nam.tran.adapter.MallardDuck
 import nam.tran.adapter.TurkeyAdapter
 import nam.tran.adapter.WildTurkey
+import nam.tran.adapter1.TranslatorAdapter
+import nam.tran.adapter1.VietnameseAdaptee
 import nam.tran.command.*
 import nam.tran.command1.Account
 import nam.tran.command1.BankControl
@@ -49,7 +51,8 @@ object Main {
 //        commandPatternExample1()
 //        commandPatternExample2()
 //        adapterPatternExample()
-        facadePatternExample()
+        adapterPatternExample1()
+//        facadePatternExample()
     }
 
     private fun strategyExample() {
@@ -295,7 +298,7 @@ object Main {
         instance.undo() // Nothing to undo
     }
 
-    fun adapterPatternExample(){
+    fun adapterPatternExample() {
         val duck = MallardDuck()
         val turkey = WildTurkey()
 
@@ -312,7 +315,17 @@ object Main {
         testDuck(adapter)
     }
 
-    fun facadePatternExample(){
+    /*
+        Một người nước ngoài muốn trao đổi với một người Việt. Tuy nhiên, 2 người này không biết ngôn ngữ của nhau nên cần phải có một
+        người để chuyển đổi từ ngôn ngữ nước ngoài sang ngôn ngữ tiếng Việt
+    */
+
+    fun adapterPatternExample1() {
+        val client = TranslatorAdapter(VietnameseAdaptee())
+        client.send("Hello")
+    }
+
+    fun facadePatternExample() {
         val amplifier = Amplifier()
         val tuner = Tuner(amplifier)
         val dvdPlayer = DvdPlayer(amplifier)
@@ -322,12 +335,12 @@ object Main {
         val lights = TheaterLights()
         val screen = Screen()
 
-        val homeTheater = HomeTheaterFacade(amplifier,tuner,dvdPlayer,cdPlayer,projector,screen,lights,popper)
+        val homeTheater = HomeTheaterFacade(amplifier, tuner, dvdPlayer, cdPlayer, projector, screen, lights, popper)
         homeTheater.watchMovie()
         homeTheater.endMovie()
     }
 
-    private fun testDuck(duck: Duck){
+    private fun testDuck(duck: Duck) {
         duck.quack()
         duck.fly()
     }

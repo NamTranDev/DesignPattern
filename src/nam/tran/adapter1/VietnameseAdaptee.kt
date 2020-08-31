@@ -1,8 +1,8 @@
 package nam.tran.adapter1
 
-class JapaneseAdaptee : Japanese{
+class VietnameseAdaptee : Vietnamese{
 
     override fun receiver(word: String) {
-        println("Convert $word to Japanese")
+        println("Convert $word to Tiếng Việt")
     }
 }
