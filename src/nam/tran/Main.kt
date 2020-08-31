@@ -16,6 +16,7 @@ import nam.tran.decorator.DarkRoast
 import nam.tran.decorator.Mocha
 import nam.tran.decorator.Whip
 import nam.tran.facade.*
+import nam.tran.facade1.ShopFacade
 import nam.tran.factory._method.ChicagoPizzaStore
 import nam.tran.factory._method.NYPizzaStore
 import nam.tran.factory1._abstract.FunitureFactory
@@ -51,8 +52,9 @@ object Main {
 //        commandPatternExample1()
 //        commandPatternExample2()
 //        adapterPatternExample()
-        adapterPatternExample1()
+//        adapterPatternExample1()
 //        facadePatternExample()
+        facadePatternExample1()
     }
 
     private fun strategyExample() {
@@ -338,6 +340,11 @@ object Main {
         val homeTheater = HomeTheaterFacade(amplifier, tuner, dvdPlayer, cdPlayer, projector, screen, lights, popper)
         homeTheater.watchMovie()
         homeTheater.endMovie()
+    }
+
+    fun facadePatternExample1(){
+        ShopFacade.getInstance().buyProductByCashWithFreeShipping("namtran09061992@gmail.com");
+        ShopFacade.getInstance().buyProductByPaypalWithStandardShipping("namtran09061992@gmail.com", "0963160906")
     }
 
     private fun testDuck(duck: Duck) {

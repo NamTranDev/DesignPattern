@@ -63,3 +63,9 @@ _Object Adapter - Composition_
 _Class Adapter - Inheritance_
 
 <img src="image/design-patterns-class-adapter-diagram.png" />
+
+## Facade Pattern
+
+###### "  The Facade Pattern provides a unified interface to a set of interface in a subsystem. Facade defines a highter-level interface that makes the subsystem easier to use. "
+
+<img src="image/design-patterns-facade-diagram.png" />
