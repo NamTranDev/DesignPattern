@@ -134,18 +134,18 @@ object Main {
         val nyStore = NYPizzaStore()
         val chicagoStore = ChicagoPizzaStore()
         var pizza = nyStore.orderPizza("cheese")
-        System.out.println("Ethen ordered a ${pizza?.name}")
+        println("Ethen ordered a ${pizza?.name}")
         pizza = chicagoStore.orderPizza("cheese")
-        System.out.println("Joel ordered a ${pizza?.name}")
+        println("Joel ordered a ${pizza?.name}")
     }
 
     private fun abstractFactoryExample() {
         val nyStore = nam.tran.factory._abstract.NYPizzaStore()
         val chicagoStore = nam.tran.factory._abstract.ChicagoPizzaStore()
         var pizza = nyStore.orderPizza("cheese")
-        System.out.println("Ethen ordered a ${pizza?.name}")
+        println("Ethen ordered a ${pizza?.name}")
         pizza = chicagoStore.orderPizza("cheese")
-        System.out.println("Joel ordered a ${pizza?.name}")
+        println("Joel ordered a ${pizza?.name}")
     }
 
     /*

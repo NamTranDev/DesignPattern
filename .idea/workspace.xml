@@ -2,27 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="071c51e9-f6a3-4d78-81e1-ef28f0cf79df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/adapter/Duck.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/adapter/MallardDuck.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/adapter/Turkey.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/adapter/TurkeyAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/adapter/WildTurkey.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/facade/Amplifier.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/facade/CdPlayer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/facade/DvdPlayer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/facade/HomeTheaterFacade.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/facade/PopcornPopper.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/facade/Projector.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/facade/Screen.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/facade/TheaterLights.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/facade/Tuner.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/design-patterns-class-adapter-diagram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/design-patterns-object-adapter-diagram.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nam/tran/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/nam/tran/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -37,6 +29,9 @@
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
   <component name="ProjectId" id="1edH5dX6663XHIKbZM2cdEENtLZ" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -46,8 +41,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1593703490395" />
-    <property name="last_opened_file_path" value="D:/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/image" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
@@ -56,11 +53,12 @@
       <recent name="nam.tran.command" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\DesignPattern\image" />
       <recent name="E:\DesignPattern\image" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="nam.tran.Main" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+    <configuration name="nam.tran.Main" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="DesignPattern" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -78,6 +76,18 @@
         <item itemvalue="Kotlin.nam.tran.Main" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -97,6 +107,10 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="782" y="256" key="#com.intellij.ide.util.MemberChooser/62.0.1858.1080@62.0.1858.1080" timestamp="1596877708449" />
+    <state x="839" y="428" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1598842280068">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="839" y="428" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1598842280068" />
     <state x="2534" y="244" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1595947660547">
       <screen x="1982" y="0" width="1858" height="1080" />
     </state>
@@ -129,6 +143,10 @@
     <state width="1871" height="221" key="GridCell.Tab.0.right/1982.0.1858.1080/62.0.1858.1080@1982.0.1858.1080" timestamp="1595948237913" />
     <state width="1815" height="286" key="GridCell.Tab.0.right/1982.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1595145346561" />
     <state width="1815" height="285" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1598693721059" />
+    <state x="687" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1598840127448">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="687" y="363" key="com.intellij.ide.util.TipDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1598840127448" />
     <state x="647" y="250" key="run.anything.popup" timestamp="1598683876772">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>

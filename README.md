@@ -51,3 +51,15 @@
 ###### "  The Singleton Pattern ensures a class has only one instance, and provides a global point of access to it "
 
 <img src="image/design-patterns-singleton-diagram.png" />
+
+## Adapter Pattern
+
+###### "  The Adapter Pattern converts the interface of a class into another interface the clients expect. Adapter lets classes work together that coundn't otherwise because of incompatible interface "
+
+_Object Adapter - Composition_
+
+<img src="image/design-patterns-object-adapter-diagram.png" />
+
+_Class Adapter - Inheritance_
+
+<img src="image/design-patterns-class-adapter-diagram.png" />
