@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="071c51e9-f6a3-4d78-81e1-ef28f0cf79df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/image/design-patterns-facade-diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/facade1/AccountService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/facade1/EmailService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/facade1/PaymentService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/facade1/SMSService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/facade1/ShippingService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nam/tran/facade1/ShopFacade.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/design-patterns-template-method-diagram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/template/CaffeinBeverage.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/template/CoffeeBeverage.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nam/tran/template/TeaBeverage.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/nam/tran/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/nam/tran/Main.kt" afterDir="false" />
@@ -54,6 +51,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="nam.tran.template" />
       <recent name="nam.tran.command1" />
       <recent name="nam.tran.command" />
     </key>
@@ -124,34 +122,34 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="721" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1596209704926" />
-    <state width="1815" height="287" key="GridCell.Tab.0.bottom" timestamp="1598866918328">
+    <state width="1815" height="287" key="GridCell.Tab.0.bottom" timestamp="1599626250417">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1871" height="221" key="GridCell.Tab.0.bottom/1982.0.1858.1080/62.0.1858.1080@1982.0.1858.1080" timestamp="1595948237913" />
     <state width="1815" height="286" key="GridCell.Tab.0.bottom/1982.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1595145346561" />
-    <state width="1815" height="287" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1598866918328" />
-    <state width="1815" height="287" key="GridCell.Tab.0.center" timestamp="1598866918328">
+    <state width="1815" height="287" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1599626250417" />
+    <state width="1815" height="287" key="GridCell.Tab.0.center" timestamp="1599626250417">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1871" height="221" key="GridCell.Tab.0.center/1982.0.1858.1080/62.0.1858.1080@1982.0.1858.1080" timestamp="1595948237913" />
     <state width="1815" height="286" key="GridCell.Tab.0.center/1982.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1595145346561" />
-    <state width="1815" height="287" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1598866918328" />
-    <state width="1815" height="287" key="GridCell.Tab.0.left" timestamp="1598866918328">
+    <state width="1815" height="287" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1599626250417" />
+    <state width="1815" height="287" key="GridCell.Tab.0.left" timestamp="1599626250417">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1871" height="221" key="GridCell.Tab.0.left/1982.0.1858.1080/62.0.1858.1080@1982.0.1858.1080" timestamp="1595948237913" />
     <state width="1815" height="286" key="GridCell.Tab.0.left/1982.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1595145346561" />
-    <state width="1815" height="287" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1598866918328" />
-    <state width="1815" height="287" key="GridCell.Tab.0.right" timestamp="1598866918328">
+    <state width="1815" height="287" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1599626250417" />
+    <state width="1815" height="287" key="GridCell.Tab.0.right" timestamp="1599626250417">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1871" height="221" key="GridCell.Tab.0.right/1982.0.1858.1080/62.0.1858.1080@1982.0.1858.1080" timestamp="1595948237913" />
     <state width="1815" height="286" key="GridCell.Tab.0.right/1982.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1595145346561" />
-    <state width="1815" height="287" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1598866918328" />
-    <state x="687" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1598840127448">
+    <state width="1815" height="287" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1599626250417" />
+    <state x="687" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1599617288615">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="687" y="363" key="com.intellij.ide.util.TipDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1598840127448" />
+    <state x="687" y="363" key="com.intellij.ide.util.TipDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1599617288615" />
     <state x="647" y="250" key="run.anything.popup" timestamp="1598683876772">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>

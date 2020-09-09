@@ -32,6 +32,8 @@ import nam.tran.strategy1.King
 import nam.tran.strategy1.Knight
 import nam.tran.strategy1.Queen
 import nam.tran.strategy1.Troll
+import nam.tran.template.CoffeeBeverage
+import nam.tran.template.TeaBeverage
 
 
 object Main {
@@ -54,7 +56,8 @@ object Main {
 //        adapterPatternExample()
 //        adapterPatternExample1()
 //        facadePatternExample()
-        facadePatternExample1()
+//        facadePatternExample1()
+        templateMethodPatternExample()
     }
 
     private fun strategyExample() {
@@ -345,6 +348,15 @@ object Main {
     fun facadePatternExample1(){
         ShopFacade.getInstance().buyProductByCashWithFreeShipping("namtran09061992@gmail.com");
         ShopFacade.getInstance().buyProductByPaypalWithStandardShipping("namtran09061992@gmail.com", "0963160906")
+    }
+
+    fun templateMethodPatternExample(){
+        val tea = TeaBeverage()
+        val coffee = CoffeeBeverage()
+        println("Making tea ...")
+        tea.prepareRecipe()
+        println("Making coffee ...")
+        coffee.prepareRecipe()
     }
 
     private fun testDuck(duck: Duck) {

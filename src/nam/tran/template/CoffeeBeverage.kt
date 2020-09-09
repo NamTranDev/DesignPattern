@@ -3,14 +3,14 @@ package nam.tran.template
 import java.io.BufferedReader
 import java.io.InputStreamReader
 
-class TeaBeverage : CaffeinBeverage() {
+class CoffeeBeverage : CaffeinBeverage() {
 
     override fun brew() {
-        println("Steeping the tea")
+        println("Dripping coffee through filter")
     }
 
     override fun addCondiment() {
-        println("Adding lemon")
+        println("Adding sugar and milk")
     }
 
     override fun customerWantsCondiment(): Boolean {
@@ -22,7 +22,7 @@ class TeaBeverage : CaffeinBeverage() {
 
     private fun getUserInput(): String {
         var answer: String? = null
-        println("Would you like lemon with your tea (y/n)?")
+        println("Would you like sugar and milk with your coffee (y/n)?")
         val input = BufferedReader(InputStreamReader(System.`in`))
         answer = input.readLine()
         if (answer == null)

@@ -16,6 +16,8 @@
 
 - Depend upon abstractions. Do not depend upon concrete classes
 
+- Talk only to your immediate friends ( Least Knowledge )
+
 ## Strategy Pattern
 
 ###### " Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from the clients that use it "
@@ -69,3 +71,9 @@ _Class Adapter - Inheritance_
 ###### "  The Facade Pattern provides a unified interface to a set of interface in a subsystem. Facade defines a highter-level interface that makes the subsystem easier to use. "
 
 <img src="image/design-patterns-facade-diagram.png" />
+
+## Template Method Pattern
+
+###### "  The Template Method Pattern defines the skeleton of an algorithm in a method, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure. "
+
+<img src="image/design-patterns-template-method-diagram.png" />
