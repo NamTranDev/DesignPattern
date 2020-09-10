@@ -34,6 +34,9 @@ import nam.tran.strategy1.Queen
 import nam.tran.strategy1.Troll
 import nam.tran.template.CoffeeBeverage
 import nam.tran.template.TeaBeverage
+import nam.tran.template1.DetailPage
+import nam.tran.template1.HomePage
+import nam.tran.template1.WelcomePage
 
 
 object Main {
@@ -57,7 +60,8 @@ object Main {
 //        adapterPatternExample1()
 //        facadePatternExample()
 //        facadePatternExample1()
-        templateMethodPatternExample()
+//        templateMethodPatternExample()
+        templateMethodPatternExample2()
     }
 
     private fun strategyExample() {
@@ -357,6 +361,22 @@ object Main {
         tea.prepareRecipe()
         println("Making coffee ...")
         coffee.prepareRecipe()
+    }
+
+    /*
+        Thiết kế website . Cấu trúc của một website thông thường gồm các phần header, footer, navigation (menu), body.
+         Riêng phần body thường xuyên thay đổi, sẽ hiển thị riêng theo từng trang. Những phần khác ít khi thay đổi, trừ khi có yêu cầu đặt .
+    */
+    fun templateMethodPatternExample2(){
+        val welcome = WelcomePage()
+        val home = HomePage()
+        val detail = DetailPage()
+        println("Build Welcome Page ...")
+        welcome.build()
+        println("Build Home Page ...")
+        home.build()
+        println("Build Detail Page ...")
+        detail.build()
     }
 
     private fun testDuck(duck: Duck) {
