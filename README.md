@@ -16,7 +16,9 @@
 
 - Depend upon abstractions. Do not depend upon concrete classes
 
-- Talk only to your immediate friends ( Least Knowledge )
+- Talk only to your immediate friends ( Least Knowledge Principle )
+
+- Don't call us, we'll call you ( Hollywood Principle )
 
 ## Strategy Pattern
 
