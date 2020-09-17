@@ -21,6 +21,9 @@ import nam.tran.factory._method.ChicagoPizzaStore
 import nam.tran.factory._method.NYPizzaStore
 import nam.tran.factory1._abstract.FunitureFactory
 import nam.tran.factory1._method.BankFactory
+import nam.tran.iterator.DinnerMenu
+import nam.tran.iterator.PancakeHouseMenu
+import nam.tran.iterator.Waitress
 import nam.tran.observer.CurrentConditionsDisplay
 import nam.tran.observer.ForecastDisplay
 import nam.tran.observer.StatisticsDisplay
@@ -61,7 +64,8 @@ object Main {
 //        facadePatternExample()
 //        facadePatternExample1()
 //        templateMethodPatternExample()
-        templateMethodPatternExample2()
+//        templateMethodPatternExample2()
+        iteratorPatternExample()
     }
 
     private fun strategyExample() {
@@ -349,12 +353,12 @@ object Main {
         homeTheater.endMovie()
     }
 
-    fun facadePatternExample1(){
+    fun facadePatternExample1() {
         ShopFacade.getInstance().buyProductByCashWithFreeShipping("namtran09061992@gmail.com");
         ShopFacade.getInstance().buyProductByPaypalWithStandardShipping("namtran09061992@gmail.com", "0963160906")
     }
 
-    fun templateMethodPatternExample(){
+    fun templateMethodPatternExample() {
         val tea = TeaBeverage()
         val coffee = CoffeeBeverage()
         println("Making tea ...")
@@ -367,7 +371,7 @@ object Main {
         Thiết kế website . Cấu trúc của một website thông thường gồm các phần header, footer, navigation (menu), body.
          Riêng phần body thường xuyên thay đổi, sẽ hiển thị riêng theo từng trang. Những phần khác ít khi thay đổi, trừ khi có yêu cầu đặt .
     */
-    fun templateMethodPatternExample2(){
+    fun templateMethodPatternExample2() {
         val welcome = WelcomePage()
         val home = HomePage()
         val detail = DetailPage()
@@ -377,6 +381,11 @@ object Main {
         home.build()
         println("Build Detail Page ...")
         detail.build()
+    }
+
+    fun iteratorPatternExample() {
+        val waitress = Waitress(PancakeHouseMenu(), DinnerMenu())
+        waitress.printMenu()
     }
 
     private fun testDuck(duck: Duck) {

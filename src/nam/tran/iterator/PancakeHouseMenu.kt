@@ -1,32 +1,22 @@
 package nam.tran.iterator
 
-class DinnerMenu {
+class PancakeHouseMenu {
 
-    companion object{
-        const val MAX_ITEMS = 6
-    }
-    val menus = arrayOf<Menu>()
-    var numberOfItems = 0
+    val menus = ArrayList<Menu>()
 
     init {
-        addItem("Vegetarian BLT","(Fakin') Bacon with lettuce & tomato on whole wheat",true,2.99)
-        addItem("BLT","Bacon with lettuce & tomato on whole wheat",false,2.99)
-        addItem("Soup of the day","Soup of the day, with a side of potato salad",false,3.29)
-        addItem("Hotdog","A hot dog, with saurkraut, relish, onions, topped with cheese",false,3.05)
+        addItem("K&B's Pancake Breakfast", "Pancakes with scrambled eggs, and toast", true, 2.99)
+        addItem("Regular Pancake Breakfast", "Pancakes with fried eggs, and sausage", false, 2.99)
+        addItem("Bkueberry Pancake", "Pancakes made with fresh blueberries", true, 3.49)
+        addItem("Waffles", "Waffles, with your choice of blueberries or strawberries", true, 3.49)
     }
 
-    fun addItem(name : String,description : String,isVegetarian : Boolean,price : Double){
+    fun addItem(name: String, description: String, isVegetarian: Boolean, price: Double) {
         val menu = Menu(name, description, isVegetarian, price)
-        if (numberOfItems >= MAX_ITEMS){
-            println("Sorry, menu is full!! Can't add item to menu")
-        }else{
-            menus[numberOfItems] = menu
-            numberOfItems++
-        }
+        menus.add(menu)
     }
 
-    fun createIterator() : Iterator<Menu>{
-        return DinnerIterator(menus)
+    fun createIterator(): Iterator<Menu> {
+        return PancakeHouseIterator(menus)
     }
-
 }
