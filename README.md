@@ -79,3 +79,9 @@ _Class Adapter - Inheritance_
 ###### "  The Template Method Pattern defines the skeleton of an algorithm in a method, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure. "
 
 <img src="image/design-patterns-template-method-diagram.png" />
+
+## Iterator Pattern
+
+###### "  The Iterator Pattern provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation. "
+
+<img src="image/design-patterns-iterator-diagram.png" />

@@ -1,6 +1,6 @@
 package nam.tran.iterator
 
-class DinnerIterator constructor(val items : Array<Menu>) : Iterator<Menu>{
+class DinnerIterator constructor(val items : Array<MenuItem>) : Iterator<MenuItem>{
 
     private var mPosition = 0
 
@@ -10,7 +10,7 @@ class DinnerIterator constructor(val items : Array<Menu>) : Iterator<Menu>{
         return true
     }
 
-    override fun next(): Menu {
+    override fun next(): MenuItem {
         val menu = items[mPosition]
         mPosition++
         return menu

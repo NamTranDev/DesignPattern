@@ -1,8 +1,8 @@
 package nam.tran.iterator
 
-import nam.tran.iterator.Menu.Companion.defaultMenu
+import nam.tran.iterator.MenuItem.Companion.defaultMenu
 
-class DinnerMenu {
+class DinnerMenu : Menu{
 
     companion object {
         const val MAX_ITEMS = 6
@@ -23,7 +23,7 @@ class DinnerMenu {
     }
 
     fun addItem(name: String, description: String, isVegetarian: Boolean, price: Double) {
-        val menu = Menu(name, description, isVegetarian, price)
+        val menu = MenuItem(name, description, isVegetarian, price)
         if (numberOfItems >= MAX_ITEMS) {
             println("Sorry, menu is full!! Can't add item to menu")
         } else {
@@ -32,7 +32,7 @@ class DinnerMenu {
         }
     }
 
-    fun createIterator(): Iterator<Menu> {
+    override fun createIterator(): Iterator<MenuItem> {
         return DinnerIterator(menus)
     }
 

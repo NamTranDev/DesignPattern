@@ -1,8 +1,8 @@
 package nam.tran.iterator
 
-class PancakeHouseMenu {
+class PancakeHouseMenu : Menu{
 
-    val menus = ArrayList<Menu>()
+    val menus = ArrayList<MenuItem>()
 
     init {
         addItem("K&B's Pancake Breakfast", "Pancakes with scrambled eggs, and toast", true, 2.99)
@@ -12,11 +12,11 @@ class PancakeHouseMenu {
     }
 
     fun addItem(name: String, description: String, isVegetarian: Boolean, price: Double) {
-        val menu = Menu(name, description, isVegetarian, price)
+        val menu = MenuItem(name, description, isVegetarian, price)
         menus.add(menu)
     }
 
-    fun createIterator(): Iterator<Menu> {
-        return PancakeHouseIterator(menus)
+    override fun createIterator() : Iterator<MenuItem>{
+        return menus.iterator()
     }
 }
