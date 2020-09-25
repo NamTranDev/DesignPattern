@@ -21,6 +21,7 @@ import nam.tran.factory._method.ChicagoPizzaStore
 import nam.tran.factory._method.NYPizzaStore
 import nam.tran.factory1._abstract.FunitureFactory
 import nam.tran.factory1._method.BankFactory
+import nam.tran.iterator.CafeMenu
 import nam.tran.iterator.DinnerMenu
 import nam.tran.iterator.PancakeHouseMenu
 import nam.tran.iterator.Waitress
@@ -384,7 +385,7 @@ object Main {
     }
 
     fun iteratorPatternExample() {
-        val waitress = Waitress(PancakeHouseMenu(), DinnerMenu())
+        val waitress = Waitress(PancakeHouseMenu(), DinnerMenu(), CafeMenu())
         waitress.printMenu()
     }
 
