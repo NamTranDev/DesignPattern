@@ -20,6 +20,8 @@
 
 - Don't call us, we'll call you ( Hollywood Principle )
 
+- A class should have only one reason to change ( Single Responsibility )
+
 ## Strategy Pattern
 
 ###### " Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from the clients that use it "
