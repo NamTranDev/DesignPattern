@@ -12,6 +12,8 @@ import nam.tran.command1.BankControl
 import nam.tran.command1.CloseAccountCommand
 import nam.tran.command1.OpenAccountCommand
 import nam.tran.command2.DocumentControl
+import nam.tran.composite.Menu
+import nam.tran.composite.MenuItem
 import nam.tran.decorator.DarkRoast
 import nam.tran.decorator.Mocha
 import nam.tran.decorator.Whip
@@ -66,7 +68,8 @@ object Main {
 //        facadePatternExample1()
 //        templateMethodPatternExample()
 //        templateMethodPatternExample2()
-        iteratorPatternExample()
+//        iteratorPatternExample()
+        compositePatternExample()
     }
 
     private fun strategyExample() {
@@ -386,6 +389,24 @@ object Main {
 
     fun iteratorPatternExample() {
         val waitress = Waitress(PancakeHouseMenu(), DinnerMenu(), CafeMenu())
+        waitress.printMenu()
+    }
+
+    fun compositePatternExample() {
+        val pancakeHouseMenu = Menu("PANCAKE HOUSE MENU", "Breakfast")
+        val dinnerMenu = Menu("DINNER MENU", "Lunch")
+        val cafeMenu = Menu("CAFE MENU", "Dinner")
+        val dessertMenu = Menu("DESSERT MENU", "Dessert of course!")
+
+        val allMenu = Menu("ALL MENUS", "All menus combined")
+        allMenu.add(pancakeHouseMenu)
+        allMenu.add(dinnerMenu)
+        allMenu.add(cafeMenu)
+        dinnerMenu.add(MenuItem("Pasta", "Spaghetti with Marinara Sauce, and a slice of sourdough bread", true, 3.89))
+        dinnerMenu.add(dessertMenu)
+        dessertMenu.add(MenuItem("Apple Pie", "Apple pie with a flakey crust, topped with vanilla icecream", true, 1.59))
+
+        val waitress = nam.tran.composite.Waitress(allMenu)
         waitress.printMenu()
     }
 
