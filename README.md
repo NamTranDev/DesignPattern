@@ -87,3 +87,9 @@ _Class Adapter - Inheritance_
 ###### "  The Iterator Pattern provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation. "
 
 <img src="image/design-patterns-iterator-diagram.png" />
+
+## Composite Pattern
+
+###### "  The Composite Pattern allows you to compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual object and compositions of objects uniformly. "
+
+<img src="image/design-patterns-composite-diagram.png" />

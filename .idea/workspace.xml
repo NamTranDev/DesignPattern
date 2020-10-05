@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="071c51e9-f6a3-4d78-81e1-ef28f0cf79df" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/image/design-patterns-composite-diagram.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -53,12 +54,12 @@
       <recent name="nam.tran.command" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\DesignPattern\image" />
       <recent name="D:\DesignPattern\image" />
+      <recent name="E:\DesignPattern\image" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="nam.tran.Main" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+    <configuration name="nam.tran.Main" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="DesignPattern" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -76,6 +77,18 @@
         <item itemvalue="Kotlin.nam.tran.Main" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
