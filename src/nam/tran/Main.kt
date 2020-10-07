@@ -394,20 +394,35 @@ object Main {
 
     fun compositePatternExample() {
         val pancakeHouseMenu = Menu("PANCAKE HOUSE MENU", "Breakfast")
+        pancakeHouseMenu.add(MenuItem("K&B's Pancake Breakfast", "Pancakes with scrambled eggs, and toast", true, 2.99))
+        pancakeHouseMenu.add(MenuItem("Regular Pancake Breakfast", "Pancakes with fried eggs, and sausage", false, 2.99))
+        pancakeHouseMenu.add(MenuItem("Bkueberry Pancake", "Pancakes made with fresh blueberries", true, 3.49))
+        pancakeHouseMenu.add(MenuItem("Waffles", "Waffles, with your choice of blueberries or strawberries", true, 3.49))
+
         val dinnerMenu = Menu("DINNER MENU", "Lunch")
+        dinnerMenu.add(MenuItem("Vegetarian BLT", "(Fakin') Bacon with lettuce & tomato on whole wheat", true, 2.99))
+        dinnerMenu.add(MenuItem("BLT", "Bacon with lettuce & tomato on whole wheat", false, 2.99))
+        dinnerMenu.add(MenuItem("Soup of the day", "Soup of the day, with a side of potato salad", false, 3.29))
+        dinnerMenu.add(MenuItem("Hotdog", "A hot dog, with saurkraut, relish, onions, topped with cheese", false, 3.05))
+        dinnerMenu.add(MenuItem("Steamed Veggies and Brown Rice", "Steamed vegetables over brown rice", true, 3.99))
+        dinnerMenu.add(MenuItem("Pasta", "Spaghetti with Marinara Sauce, and a slice of sourdough bread", true, 3.89))
+
         val cafeMenu = Menu("CAFE MENU", "Dinner")
+        cafeMenu.add(MenuItem("Veggie Burger and Air Fries", "Veggie burger on a whole wheat bun, lettuce, tomato, and fries", true, 3.99))
+        cafeMenu.add(MenuItem("Soup of the day", "A cup of the soup of the day, with a side salad", false, 3.69))
+        cafeMenu.add(MenuItem("Burrito", "A large burrito, with whole pinto beans, salsa, guacamole", true, 4.29))
+
         val dessertMenu = Menu("DESSERT MENU", "Dessert of course!")
 
         val allMenu = Menu("ALL MENUS", "All menus combined")
         allMenu.add(pancakeHouseMenu)
         allMenu.add(dinnerMenu)
         allMenu.add(cafeMenu)
-        dinnerMenu.add(MenuItem("Pasta", "Spaghetti with Marinara Sauce, and a slice of sourdough bread", true, 3.89))
         dinnerMenu.add(dessertMenu)
         dessertMenu.add(MenuItem("Apple Pie", "Apple pie with a flakey crust, topped with vanilla icecream", true, 1.59))
 
         val waitress = nam.tran.composite.Waitress(allMenu)
-        waitress.printMenu()
+        waitress.printVegetarianMenu()
     }
 
     private fun testDuck(duck: Duck) {

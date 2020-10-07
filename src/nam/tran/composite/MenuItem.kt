@@ -26,4 +26,8 @@ class MenuItem constructor(val name: String, val description: String, val isVege
         print("   -- ${description()}")
         println()
     }
+
+    override fun createIterator(): Iterator<MenuComponent?> {
+        return NullIterator()
+    }
 }

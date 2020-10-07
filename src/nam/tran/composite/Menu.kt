@@ -2,7 +2,9 @@ package nam.tran.composite
 
 class Menu constructor(val name: String, val description: String) : MenuComponent() {
 
-    val menuComponents = mutableListOf<MenuComponent>()
+    private val menuComponents = mutableListOf<MenuComponent>()
+
+    private var iterator: Iterator<MenuComponent?>? = null
 
     override fun add(menu: MenuComponent) {
         menuComponents.add(menu)
@@ -28,12 +30,17 @@ class Menu constructor(val name: String, val description: String) : MenuComponen
         print(name())
         println(", ${description()}")
         println("-----------------")
-        println()
         val iterator = menuComponents.iterator()
         while (iterator.hasNext()) {
             val menu = iterator.next()
             menu.print()
-
         }
+        println()
+    }
+
+    override fun createIterator(): Iterator<MenuComponent?> {
+        if (iterator == null)
+            iterator = CompositeIterator(menuComponents.iterator())
+        return iterator!!
     }
 }
