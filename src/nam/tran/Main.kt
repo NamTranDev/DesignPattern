@@ -33,6 +33,7 @@ import nam.tran.observer.StatisticsDisplay
 import nam.tran.observer.WeatherData
 import nam.tran.observer1.*
 import nam.tran.singleton.*
+import nam.tran.state.GumballMachine
 import nam.tran.strategy.*
 import nam.tran.strategy1.King
 import nam.tran.strategy1.Knight
@@ -69,7 +70,8 @@ object Main {
 //        templateMethodPatternExample()
 //        templateMethodPatternExample2()
 //        iteratorPatternExample()
-        compositePatternExample()
+//        compositePatternExample()
+        statePatternExample()
     }
 
     private fun strategyExample() {
@@ -423,6 +425,41 @@ object Main {
 
         val waitress = nam.tran.composite.Waitress(allMenu)
         waitress.printVegetarianMenu()
+    }
+
+    fun statePatternExample(){
+        val gumballMachine = GumballMachine(5)
+
+        println("\n" + gumballMachine + "\n")
+
+        gumballMachine.insertQuarter()
+        gumballMachine.turnCrank()
+
+        println("\n" + gumballMachine + "\n")
+
+        gumballMachine.insertQuarter()
+        gumballMachine.ejectQuarter()
+        gumballMachine.turnCrank()
+
+        println("\n" + gumballMachine + "\n")
+
+        gumballMachine.insertQuarter()
+        gumballMachine.turnCrank()
+        gumballMachine.insertQuarter()
+        gumballMachine.turnCrank()
+        gumballMachine.ejectQuarter()
+
+        println("\n" + gumballMachine + "\n")
+
+        gumballMachine.insertQuarter()
+        gumballMachine.insertQuarter()
+        gumballMachine.turnCrank()
+        gumballMachine.insertQuarter()
+        gumballMachine.turnCrank()
+        gumballMachine.insertQuarter()
+        gumballMachine.turnCrank()
+
+        println("\n" + gumballMachine + "\n")
     }
 
     private fun testDuck(duck: Duck) {
