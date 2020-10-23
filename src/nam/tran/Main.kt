@@ -14,6 +14,9 @@ import nam.tran.command1.OpenAccountCommand
 import nam.tran.command2.DocumentControl
 import nam.tran.composite.Menu
 import nam.tran.composite.MenuItem
+import nam.tran.composite1.File
+import nam.tran.composite1.FileComponent
+import nam.tran.composite1.Folder
 import nam.tran.decorator.DarkRoast
 import nam.tran.decorator.Mocha
 import nam.tran.decorator.Whip
@@ -44,6 +47,7 @@ import nam.tran.template.TeaBeverage
 import nam.tran.template1.DetailPage
 import nam.tran.template1.HomePage
 import nam.tran.template1.WelcomePage
+import java.util.*
 
 
 object Main {
@@ -71,7 +75,9 @@ object Main {
 //        templateMethodPatternExample2()
 //        iteratorPatternExample()
 //        compositePatternExample()
-        statePatternExample()
+//        compositePatternExample1()
+		  statePatternExample()
+
     }
 
     private fun strategyExample() {
@@ -425,6 +431,22 @@ object Main {
 
         val waitress = nam.tran.composite.Waitress(allMenu)
         waitress.printVegetarianMenu()
+    }
+
+    /*
+        Một hệ thống tập tin là một cấu trúc cây có chứa các nhánh là các thư mục (folder – composite), cũng như các nút lá là các tệp (file – leaf).
+        Một folder có thể chứa một hoặc nhiều file hoặc folder. File và Folder có nhiều thao tác và thuộc tính chung, chẳng hạn như: di chuyển (cut)
+        , sao chép (copy), liệt kê (view) hoặc các thuộc tính thư mục như tên tệp và kích thước.
+    */
+    fun compositePatternExample1(){
+        val file1: FileComponent = File("file 1", 10)
+        val file2: FileComponent = File("file 2", 5)
+        val file3: FileComponent = File("file 3", 12)
+
+        val files = listOf(file1, file2, file3)
+        val folder: FileComponent = Folder(files)
+        folder.showProperty()
+        println("Total Size: " + folder.totalSize())
     }
 
     fun statePatternExample(){
