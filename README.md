@@ -93,3 +93,9 @@ _Class Adapter - Inheritance_
 ###### "  The Composite Pattern allows you to compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual object and compositions of objects uniformly. "
 
 <img src="image/design-patterns-composite-diagram.png" />
+
+## State Pattern
+
+###### "  The State Pattern allows an object to alter its behavior when its internal state changes. The object will appear to change its class "
+
+<img src="image/design-patterns-state-diagram.png" />
