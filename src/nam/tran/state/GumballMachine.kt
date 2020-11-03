@@ -6,6 +6,7 @@ class GumballMachine constructor(count: Int) {
     var hasQuarterState = HasQuarterState(this)
     var soldQuarterState = SoldQuarterState(this)
     var soldOutQuarterState = SoldOutQuarterState(this)
+    var winnerState = WinnerState(this)
 
     var state : State = soldOutQuarterState
     var count = 0
@@ -29,9 +30,9 @@ class GumballMachine constructor(count: Int) {
         state.despense()
     }
 
-    fun release(){
+    fun release(isWinner : Boolean = false){
         println("A gumball comes rolling out the slot ...")
-        if (count != 0)
+        if (count != 0 && !isWinner)
             count --
     }
 

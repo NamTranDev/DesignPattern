@@ -1,6 +1,11 @@
 package nam.tran.state
 
-class HasQuarterState constructor(private val gumballMachine: GumballMachine): State{
+import java.util.*
+
+class HasQuarterState constructor(private val gumballMachine: GumballMachine) : State {
+
+    val randomWinner = Random(System.currentTimeMillis())
+
     override fun insertQuarter() {
         println("You can't insert a quarter, the machine is sold out")
     }
@@ -12,7 +17,12 @@ class HasQuarterState constructor(private val gumballMachine: GumballMachine): S
 
     override fun turnCrank() {
         println("You turned ...")
-        gumballMachine.state = gumballMachine.soldQuarterState
+        val winner = randomWinner.nextInt(3)
+        if (winner == 0 && gumballMachine.count > 1) {
+            gumballMachine.state = gumballMachine.winnerState
+        } else {
+            gumballMachine.state = gumballMachine.soldQuarterState
+        }
     }
 
     override fun despense() {

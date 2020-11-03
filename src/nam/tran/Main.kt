@@ -454,32 +454,12 @@ object Main {
 
         println("\n" + gumballMachine + "\n")
 
-        gumballMachine.insertQuarter()
-        gumballMachine.turnCrank()
-
-        println("\n" + gumballMachine + "\n")
-
-        gumballMachine.insertQuarter()
-        gumballMachine.ejectQuarter()
-        gumballMachine.turnCrank()
-
-        println("\n" + gumballMachine + "\n")
-
-        gumballMachine.insertQuarter()
-        gumballMachine.turnCrank()
-        gumballMachine.insertQuarter()
-        gumballMachine.turnCrank()
-        gumballMachine.ejectQuarter()
-
-        println("\n" + gumballMachine + "\n")
-
-        gumballMachine.insertQuarter()
-        gumballMachine.insertQuarter()
-        gumballMachine.turnCrank()
-        gumballMachine.insertQuarter()
-        gumballMachine.turnCrank()
-        gumballMachine.insertQuarter()
-        gumballMachine.turnCrank()
+        while (true){
+            gumballMachine.insertQuarter()
+            gumballMachine.turnCrank()
+            if (gumballMachine.count == 0)
+                break
+        }
 
         println("\n" + gumballMachine + "\n")
     }
