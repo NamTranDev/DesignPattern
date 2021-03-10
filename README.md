@@ -99,3 +99,9 @@ _Class Adapter - Inheritance_
 ###### "  The State Pattern allows an object to alter its behavior when its internal state changes. The object will appear to change its class "
 
 <img src="image/design-patterns-state-diagram.png" />
+
+## Proxy Pattern
+
+###### "  The Proxy Pattern provides a surrogate or placeholder for another object to control access to it "
+
+<img src="image/design-patterns-proxy-diagram.png" />

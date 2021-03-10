@@ -48,6 +48,8 @@ import nam.tran.template1.DetailPage
 import nam.tran.template1.HomePage
 import nam.tran.template1.WelcomePage
 import java.util.*
+import java.util.stream.IntStream
+import java.util.stream.Stream
 
 
 object Main {
@@ -76,7 +78,8 @@ object Main {
 //        iteratorPatternExample()
 //        compositePatternExample()
 //        compositePatternExample1()
-		  statePatternExample()
+//		  statePatternExample()
+        testaaa()
 
     }
 
