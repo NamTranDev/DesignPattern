@@ -35,6 +35,9 @@ import nam.tran.observer.ForecastDisplay
 import nam.tran.observer.StatisticsDisplay
 import nam.tran.observer.WeatherData
 import nam.tran.observer1.*
+import nam.tran.proxy.protection.UserServiceProxy
+import nam.tran.proxy.protection.UserService
+import nam.tran.proxy.virtual.ProxyImage
 import nam.tran.singleton.*
 import nam.tran.state.GumballMachine
 import nam.tran.strategy.*
@@ -47,9 +50,6 @@ import nam.tran.template.TeaBeverage
 import nam.tran.template1.DetailPage
 import nam.tran.template1.HomePage
 import nam.tran.template1.WelcomePage
-import java.util.*
-import java.util.stream.IntStream
-import java.util.stream.Stream
 
 
 object Main {
@@ -79,7 +79,8 @@ object Main {
 //        compositePatternExample()
 //        compositePatternExample1()
 //		  statePatternExample()
-        testaaa()
+//        proxyVitualPatternExample()
+        proxyProtectionPatternExample()
 
     }
 
@@ -441,7 +442,7 @@ object Main {
         Một folder có thể chứa một hoặc nhiều file hoặc folder. File và Folder có nhiều thao tác và thuộc tính chung, chẳng hạn như: di chuyển (cut)
         , sao chép (copy), liệt kê (view) hoặc các thuộc tính thư mục như tên tệp và kích thước.
     */
-    fun compositePatternExample1(){
+    fun compositePatternExample1() {
         val file1: FileComponent = File("file 1", 10)
         val file2: FileComponent = File("file 2", 5)
         val file3: FileComponent = File("file 3", 12)
@@ -452,12 +453,12 @@ object Main {
         println("Total Size: " + folder.totalSize())
     }
 
-    fun statePatternExample(){
+    fun statePatternExample() {
         val gumballMachine = GumballMachine(5)
 
         println("\n" + gumballMachine + "\n")
 
-        while (true){
+        while (true) {
             gumballMachine.insertQuarter()
             gumballMachine.turnCrank()
             if (gumballMachine.count == 0)
@@ -470,5 +471,28 @@ object Main {
     private fun testDuck(duck: Duck) {
         duck.quack()
         duck.fly()
+    }
+
+    fun proxyVitualPatternExample() {
+        println("Init proxy image: ")
+        val proxyImage = ProxyImage("https://gpcoder.com/favicon.ico")
+
+        println("---")
+        println("Call real service 1st: ")
+        proxyImage.showImage()
+
+        println("---")
+        println("Call real service 2nd: ")
+        proxyImage.showImage()
+    }
+
+    fun proxyProtectionPatternExample() {
+        val admin: UserService = UserServiceProxy("gpcoder", "admin")
+        admin.load()
+        admin.insert()
+
+        val customer: UserService = UserServiceProxy("customer", "guest")
+        customer.load()
+        customer.insert()
     }
 }
